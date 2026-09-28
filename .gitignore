@@ -1,0 +1,12 @@
+# Large dataset files (>50MB) - use `python download_data.py`
+covtype.data
+covtype_with_header.csv
+covtype.data.gz
+covertype.zip
+
+# Python cache & Jupyter checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.log
