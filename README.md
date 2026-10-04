@@ -105,3 +105,14 @@ jupyter notebook Forest_Cover_Type_Advanced_Benchmark.ipynb
 ## 📜 License & Attribution
 * **Dataset:** Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 * **Citation:** Blackard, J. (1998). *Covertype* [Dataset]. UCI Machine Learning Repository. [https://doi.org/10.24432/C50K5N](https://doi.org/10.24432/C50K5N).
+
+## Contributing with a small pull request
+
+A pull request lets you propose a change on a separate branch so it can be reviewed before it becomes part of `main`.
+
+1. Create a branch from the latest `main`, for example `docs/contribution-flow-example`.
+2. Make one focused change and commit it on that branch.
+3. Push the branch and open a pull request targeting `main`.
+4. Review the proposed diff and checks. After approval, merge the pull request into `main`.
+
+For this documentation-only example, no model code or results are changed.
