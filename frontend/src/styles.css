@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
-  --bg-color: #0c111d;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --card-bg: rgba(255, 255, 255, 0.04);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --card-blur: 24px;
+  --bg-color: #fbfbfd;
+  --surface: #ffffff;
+  --text-main: #1d1d1f;
+  --text-secondary: #515154;
+  --text-muted: #86868b;
+  --border-subtle: #e5e5ea;
+  --border-card: rgba(0, 0, 0, 0.08);
   --accent-blue: #0071e3;
   --accent-blue-hover: #0077ed;
-  --accent-emerald: #10b981;
-  --accent-purple: #8b5cf6;
+  --accent-blue-light: #e8f2fc;
+  --accent-emerald: #34c759;
+  --accent-emerald-light: #eaf8ee;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.08);
 }
 
 *, *::before, *::after {
