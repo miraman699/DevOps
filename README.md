@@ -188,6 +188,7 @@ DevOps/
   * Checks out the exact commit validated by CI, so an unvalidated revision is never published.
   * Compiles Angular with `--base-href /DevOps/`.
   * Deploys static build artifact (`frontend/dist/frontend/browser`) directly to GitHub Pages.
+  * Before the first deploy, set repository **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. If that setting is saved after a CI run, use `workflow_dispatch` in this workflow to retry deployment.
 
 ---
 
