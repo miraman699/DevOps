@@ -1,12 +1,31 @@
-# Large dataset files (>50MB) - use `python download_data.py`
-covtype.data
-covtype_with_header.csv
-covtype.data.gz
-covertype.zip
-
-# Python cache & Jupyter checkpoints
+# Python and virtual environment
+.venv/
 __pycache__/
 *.py[cod]
-*$py.class
+.pytest_cache/
+.env
+.env.*
+!.env.example
 .ipynb_checkpoints/
+
+# Angular dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large raw dataset files (>10MB)
+covtype.data
+covtype.data.gz
+covtype_with_header.csv
+covertype.zip
+
+# Model bundle if exceeding GitHub size or git lfs (our bundle is 28MB, safe for GitHub <100MB)
+# backend/models/
+
+# Local logs
 *.log
