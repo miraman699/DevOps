@@ -180,11 +180,12 @@ DevOps/
 ## 🌐 GitHub Actions & CI/CD Pipeline
 
 * **`ci.yml` (Continuous Integration):**
-  * Runs on Ubuntu 24.04 runner on every push and pull request.
+  * Runs on Ubuntu 24.04 runner for every branch push and pull request.
   * Backend job sets up Python 3.12, installs requirements, and runs pytest test suites (`test_structure.py` and `test_api.py`).
-  * Frontend job sets up Node.js 24, performs clean install `npm ci`, and builds production Angular bundles.
+  * Frontend job sets up Node.js 24, performs clean install `npm ci`, runs Angular unit tests, and builds production bundles.
 * **`pages.yml` (Continuous Deployment):**
-  * Triggers on `main` push.
+  * Runs only after the `Full-stack CI` workflow succeeds for a commit on `main`.
+  * Checks out the exact commit validated by CI, so an unvalidated revision is never published.
   * Compiles Angular with `--base-href /DevOps/`.
   * Deploys static build artifact (`frontend/dist/frontend/browser`) directly to GitHub Pages.
 
